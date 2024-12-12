@@ -15,9 +15,9 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(openApiInterceptor)
+        /*registry.addInterceptor(openApiInterceptor)
                 .addPathPatterns("/**")    // 모든주소에 openApiInterceptor 달아주겠다
-                ;
+                ;*/ // aop 테스트 위해 주석
 
         // registry.addInterceptor(openApiInterceptor) // 가장 먼저 add한 Interceptor부터 실행, 또는 order 줄 수 있음
     }
